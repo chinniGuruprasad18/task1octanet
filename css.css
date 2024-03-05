@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./fantasy-3077928_640.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgb(0, 0, 0, 0.259);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 1000px;
+    padding-left: 20PX;
+    font-size: 4vh;
+}
+
+.text .image {
+    background-image: url("./couple-3581038_1280.webp");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;
+}
+
+.rtext p {
+    font-size: 10px;
+
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40ph;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url("./digital-art-398342_640.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b1 p {
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("./couple-3581038_1280.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .up h1 {
+    color: orange;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.b2 .up p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("./couple-2601156_640.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(255, 255, 255, 0.344);
+}
+
+.b3 {
+    width: 40%;
+    min-height: 29vh;
+    background-image: url("./hands-5219048_640.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay {
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+}
+
+.b3 .overlay p {
+    color: aliceblue;
+    padding: 1.2vh;
+}
+
+@media(max-width:700px) {
+    .rtext {
+        flex-direction: column;
+    }
+
+    .b3 .overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+
+}
+
+@media(max-width:200px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1 {
+        font-size: 5vh;
+    }
+
+    .text image {
+        height: 200px;
+        width: 1400px;
+        margin-top: 20px;
+    }
+
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rtext p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .b1 {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .b2 {
+        width: 100%;
+    }
+
+    .b2 .up {
+        min-height: 40vh;
+    }
+
+    .b3 {
+        width: 100%;
+        background-position: left;
+        min-height: 30vh;
+    }
+
+}
